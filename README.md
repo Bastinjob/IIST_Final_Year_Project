@@ -1,4 +1,3 @@
-# IIST_Final_Year_Project
 # Extracting Abstract Degradation Representation through Contrastive Learning for Blind Super-Resolution and Denoising
 
 ## Introduction

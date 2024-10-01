@@ -8,6 +8,8 @@ Contrastive learning has emerged as a powerful technique for representation lear
 
 This abstract degradation representation is utilized to super-resolve LR images, circumventing the need for direct supervision. By learning a more compact and meaningful representation of degradation, we aim to achieve better performance in SISR tasks while minimizing computational overhead.
 
+![Patch Extraction](artifacts/patch_extraction.png)
+
 ## Objectives
 - Develop a method for extracting abstract degradation representations from LR images using contrastive learning.
 - Implement a robust super-resolution model that leverages the extracted degradation representations.
@@ -20,6 +22,8 @@ The model consists of the following components:
 - **Super-Resolution Generator**: Utilizes the extracted degradation representation to enhance the quality of LR images.
 - **Loss Function**: A contrastive loss function is employed to ensure effective representation learning.
 - **Optimizer**: Stochastic Gradient Descent (SGD) is used to update model weights during training.
+
+![Model Architecture](artifacts/model_architecture.png)
 
 ## Environment Specifications
 This project is designed to run on Linux operating systems. The required environment specifications are as follows:
@@ -61,8 +65,8 @@ This script orchestrates the end-to-end process, integrating data loading, prepr
 This is the entry point of the project, allowing users to run the entire pipeline by providing the dataset path as a command-line argument.
 
 ## Results
-![Patch Extraction](artifacts/patch_extraction.png)
-![Model Architecture](artifacts/model_architecture.png)
+
+
 ![Result](artifacts/result.png)
 
 
